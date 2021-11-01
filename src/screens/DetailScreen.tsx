@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
         left: 170,
         right: 12,
         color: 'white',
-        // backgroundColor: Colors.MovieTitleBackgroundShadow
+        backgroundColor: Colors.MovieTitleBackgroundShadow
     },
     starAndClassificationContainer: {
         position: 'absolute',

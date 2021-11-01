@@ -5,7 +5,7 @@ export const Colors = {
 
     StarRatingTint: '#f7b500',
 
-    MovieTitleBackgroundShadow: '#000a',
+    MovieTitleBackgroundShadow: 'rgba(0, 0, 0, 0.1)',
 
     FadedText: '#666',
 }

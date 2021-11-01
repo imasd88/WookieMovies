@@ -45,7 +45,7 @@ const App = () => {
 <Provider store={store}>
     <NavigationContainer>
       {/* <TabNavigator /> */}
-      <HomeStack/>
+      <SearchStack/>
     </NavigationContainer>
     </Provider>
   )
