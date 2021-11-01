@@ -3,4 +3,5 @@ export const ScreenNames = {
     HomeStack: "HomeStack",
     SearchScreen: "SearchScreen",
     SearchStack: "SearchStack",
+    DetailScreen: "DetailScreen",
 }

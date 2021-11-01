@@ -7,5 +7,5 @@ import { MovieData } from "../types"
  * @param movie The movie to show the details for
  */
 export const showDetails = (navigation: any, movie: MovieData) => {
-    // navigation.navigate(ScreenNames.DetailScreen, { movie })
+    navigation.navigate(ScreenNames.DetailScreen, { movie })
 }
