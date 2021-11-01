@@ -23,6 +23,7 @@ export const MovieGenreList = ({ name, movies, onSelectMovie }: MovieGenreListPr
             <Text style={[Styles.RegularTitle, { paddingLeft: 12}]}>{name}</Text>
             <FlatList
                 horizontal
+                showsHorizontalScrollIndicator = {false}
                 data={movies}
                 renderItem={({item}) => {
                     return <MovieThumbnail key={item.id} movie={item} onSelectMovie={onSelectMovie} />

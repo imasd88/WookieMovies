@@ -1,7 +1,8 @@
 import React from 'react'
+import Image from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import { ScreenNames, HomeIcon, SearchIcon } from '../constants'
 import { HomeStack } from './HomeStack'
-import { ScreenNames } from '../constants/ScreenNames'
 import { SearchStack } from './SearchStack'
 
 const Tab = createBottomTabNavigator()
@@ -10,25 +11,23 @@ export const TabNavigator = () => {
     return (
         <Tab.Navigator>
             <Tab.Screen
-                component={HomeStack}
                 name={ScreenNames.HomeStack}
-                options={
-                    {
-                        tabBarLabel: "Home",
-                        // tabBarIcon: HomeIcon,
-                        headerShown: false,
-                    }
-                } />
-                <Tab.Screen
-                component={SearchStack}
+                component={HomeStack}
+                options={{
+                    tabBarLabel: "Home",
+                    tabBarIcon: HomeIcon,
+                    headerShown: false,
+                }}
+            />
+            <Tab.Screen
                 name={ScreenNames.SearchStack}
-                options={
-                    {
-                        tabBarLabel: "Home",
-                        // tabBarIcon: HomeIcon,
-                        headerShown: false,
-                    }
-                } />
+                component={SearchStack}
+                options={{
+                    tabBarLabel: "Search",
+                    tabBarIcon: SearchIcon,
+                    headerShown: false,
+                }}
+            />
         </Tab.Navigator>
     )
 }
