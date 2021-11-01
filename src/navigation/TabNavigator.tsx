@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'react-native'
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs'
 import { ScreenNames, HomeIcon, SearchIcon } from '../constants'
 import { HomeStack } from './HomeStack'
